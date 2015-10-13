@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3f337c43cac919fc97cdfa0c0185eca2",
+    "hash": "4b9cdb909ba4780425415179501cb6da",
+    "content-hash": "50b9074d41db48f3777d0e59ba365f13",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2105,6 +2106,49 @@
     ],
     "packages-dev": [
         {
+            "name": "fansible/devops-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fansible/DevopsBundle.git",
+                "reference": "dd6f5d294d51f5bd144f49f00d7b2e82ffac3d81"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fansible/DevopsBundle/zipball/dd6f5d294d51f5bd144f49f00d7b2e82ffac3d81",
+                "reference": "dd6f5d294d51f5bd144f49f00d7b2e82ffac3d81",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/symfony": ">=2.3.1"
+            },
+            "require-dev": {
+                "phake/phake": "1.0.5",
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "devops",
+            "autoload": {
+                "psr-4": {
+                    "Fansible\\DevopsBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Constans",
+                    "email": "simonc@linux.com"
+                }
+            ],
+            "description": "This will help you to generate a provisioning to run your Symfony apps",
+            "keywords": [
+                "Generate Provisioning Server Ansible Security"
+            ],
+            "time": "2015-05-20 09:20:29"
+        },
+        {
             "name": "sensio/generator-bundle",
             "version": "v2.5.3",
             "target-dir": "Sensio/Bundle/GeneratorBundle",
@@ -2155,7 +2199,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "fansible/devops-bundle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

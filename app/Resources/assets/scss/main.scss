@@ -94,6 +94,15 @@ header {
     }
 }
 
+// Navbar
+.navbar-brand {
+    padding: 10px;
+
+    img {
+        max-height: 44px;
+    }
+}
+
 // Footer
 footer {
     background: $gray-lighter;

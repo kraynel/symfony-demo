@@ -32,5 +32,29 @@ monolog:
 assetic:
     use_controller: true
 
+
+fansible_devops:
+  #Name of your project
+  name: symfony-demo
+  environments:
+    vagrant:
+      ip: 10.0.0.10
+      host: symfonydemo.dev
+      #Those vars will be used to generate the VagrantFile
+      #box: ubuntu/trusty64
+      #memory: 1024
+      #cpus: 1
+      #exec: 100
+      #src: .
+      #dest: /var/www/fansible-devops/current
+    prod:
+      ip: 62.210.59.162
+      host: symfonydemo.prod
+  #Specific role you want to use
+  ansible_roles:
+#      apache:
+#        name: THEROLEYOUWANT #you can found many roles on ansible galaxy
+#        version: v24
+
 #swiftmailer:
 #    delivery_address: me@example.com

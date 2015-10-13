@@ -23,6 +23,7 @@
         #}
 
             <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
@@ -35,7 +36,7 @@
                     <div class="container">
                         <div class="navbar-header">
                             <a class="navbar-brand" href="{{ path('homepage') }}">
-                                Symfony Demo
+                                <img alt="Theodo" src="{{ asset('images/theodo-logo-medium.png') }}">
                             </a>
 
                             <button type="button" class="navbar-toggle"
